@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="navbar">
+        <img src="logo.png" alt="logo" class="logo">
+        <div style="display: flex; gap: 50px;">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+            <button id="contact-button" onclick="showcontact()">Contact</button>
+        </div>
+    </div>  
+
+    <div class="home" id="home">
+        <div class="home-box1">
+            <h2>Hii I am</h2>
+            <h1>AYUSH GHODKE</h1>
+            <h4>Hey there! I'm Ayush, an aspiring front-end web developer eager to craft engaging online experiences. Let's build something amazing! 🌟💻</h4>
+
+            <div class="links">
+                <div><a href="https://github.com/Ayush9535" target="_blank"><img src="https://pngimg.com/uploads/github/github_PNG40.png" alt="github"></a></div>
+                <div><a href="https://www.linkedin.com/in/ayush-ghodke-8aab941bb/" target="_blank"><img src="https://hcrnetwork.com/wp-content/uploads/2012/11/transparent-Linkedin-logo-icon.png" alt="linkedin"></a></div>
+                <div><a href="https://www.instagram.com/ayushghodke_9535/" target="_blank"><img src="https://www.pngfind.com/pngs/m/243-2436165_download-instagram-logo-png-format-click-here-to.png" alt="instagram"></a></div>
+            </div>
+        </div>
+
+        <div class="home-box2">
+            <img src="11zon_cropped.png" id="profile" alt="">
+        </div>
+    </div>
+
+    <div class="about" id="about">
+        <div class="about-body">
+            <h2>ABOUT ME</h2>
+
+            <p>Hello! I'm Ayush, an enthusiastic aspiring learner diving headfirst into the exciting world of front-end web development. My journey in this field is fueled by a passion for creating engaging and visually appealing web experiences that captivate users.
+            As I embark on this learning adventure, I'm eager to master the essential building blocks of web development, including HTML, CSS, and JavaScript. I aim to craft seamless and interactive interfaces that not only look great but also provide a delightful user experience.
+            Through dedication, practice, and perseverance, I aspire to evolve into a skilled front-end developer, contributing to meaningful projects and making a positive impact on the digital world. Let's code and create together!</p>
+        </div>
+    </div>
+
+    <div class="skills" id="skills">
+        <h2>SKILLS</h2>
+        <div class="card-row1">
+            <div class="skill-card">
+                <img src="https://logospng.org/download/html-5/logo-html-5-1536.png" alt="html">
+                <h3>HTML</h3>
+            </div>
+            <div class="skill-card">
+                <img src="https://clipground.com/images/background-image-transparency-css-clipart.jpg" alt="html">
+                <h3>CSS</h3>
+            </div>
+            <div class="skill-card">
+                <img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_js_official_icon_130509.png
+                " alt="html">
+                <h3>JS</h3>
+            </div>
+        </div>
+        <div class="card-row2">
+            <div class="skill-card">
+                <img src="https://www.pinclipart.com/picdir/middle/534-5345877_python-logo-clipart.png" alt="html">
+                <h3>Python</h3>
+            </div>
+            <div class="skill-card sqlcard">
+                <img src="https://img2.freepng.fr/20180821/lyg/kisspng-mysql-workbench-database-mysql-cluster-5b7cdc87c3dd20.3638601015349095758023.jpg" alt="html">
+                <h3>MySql</h3>
+            </div>
+            <div class="skill-card">
+                <img src="fi441fc32-figma-logo-figma-tips-and-tricks-rusmir-arnautovic-creative-designer-ux-ui-removebg-preview.png" alt="figma" height="130px">
+                <h3 style="margin-top: 5px;">Figma</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="projects" id="projects">
+        <div class="heading">
+            <h2>PROJECTS</h2>
+        </div>
+        <div class="project-show">
+            <button onclick="previous()"><img src="https://cdn1.iconfinder.com/data/icons/essential-28/24/arrow-ios-back-outline-512.png" alt=""></button>
+            <div class="project-showcase">
+                <img src="hangman.png" alt="hangman" id="project-img">
+
+                <h2 id="project-name">Hangman Game</h2>
+
+                <div>
+                    <a href="https://hangman-game-project1.netlify.app/" target="_blank" id="demo-link"><button>Demo</button></a>
+                    <a href="https://github.com/Ayush9535/Hangman-Game" target="_blank" id="code-link"><button>Code</button></a>
+                </div>
+            </div>
+            <button onclick="next()"><img src="https://cdn1.iconfinder.com/data/icons/essential-28/24/arrow-ios-forward-outline-512.png" alt=""></button>
+        </div>
+    </div>
+
+    <div class="contact-form" id="cont">
+        <h1>GET IN TOUCH</h1>
+        <button onclick="closecontact()"><img src="https://th.bing.com/th/id/OIP.WCbQmacZA3WpOHQmgayMiwAAAA?pid=ImgDet&w=200&h=200&c=7&dpr=1.3" alt="cross"></button>
+        <br>
+
+        <form autocomplete="off" id="contact-form" onsubmit="return false">
+            <label for="username" id="username-label">Your Name</label><br>
+            <input type="text" name="username" id="username" placeholder="Enter Your Name" required>
+            <br>
+            <label for="email">Your Email</label><br>
+            <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+            <br>
+            <label for="number">Your Phone Number</label><br>
+            <input type="text" name="number" id="number" placeholder="Enter Your Number" required>
+            <br>
+            <label for="message">Message</label><br>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message Here"></textarea>
+            <br>
+            <button type="submit" id="submit-button" onclick="contactsubmit()">SUBMIT</button>
+        </form>
+
+        <div id="result-text"></div>
+    </div>
+
+</body>
+</html>
+
+<script src="app.js"></script>
