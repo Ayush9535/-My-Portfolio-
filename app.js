@@ -28,6 +28,33 @@ const codelink = document.getElementById("code-link")
 const contact = document.getElementById("contactform")
 const submitbutton = document.getElementById("submit-button")
 
+const togglebtn = document.getElementById("toggle-btn")
+const toggleimg = document.getElementById("toggle")
+const csslink = document.getElementById("csslink")
+const profile = document.getElementById("profile")
+const giticon = document.getElementById("githubicon")
+const linkedinicon = document.getElementById("linkedinicon")
+const instaicon = document.getElementById("instagramicon")
+
+function toggledarklight(){
+    if (toggleimg.getAttribute("src") == "https://cdn-icons-png.flaticon.com/128/439/439842.png"){
+        toggleimg.setAttribute("src" , "https://cdn-icons-png.flaticon.com/128/1812/1812660.png");
+        csslink.setAttribute("href" , "style.css");
+        giticon.setAttribute("src" , "https://pngimg.com/uploads/github/github_PNG40.png")
+        linkedinicon.setAttribute("src" , "https://hcrnetwork.com/wp-content/uploads/2012/11/transparent-Linkedin-logo-icon.png")
+        instaicon.setAttribute("src" , "https://www.pngfind.com/pngs/m/243-2436165_download-instagram-logo-png-format-click-here-to.png")
+        // profile.setAttribute("src" , "11zon_cropped.png")
+    }else{
+        toggleimg.setAttribute("src" , "https://cdn-icons-png.flaticon.com/128/439/439842.png");
+        csslink.setAttribute("href" , "style1.css");
+        giticon.setAttribute("src" , "https://icones.pro/wp-content/uploads/2021/06/icone-github-orange.png")
+        linkedinicon.setAttribute("src" , "https://icones.pro/wp-content/uploads/2021/03/icone-linkedin-ronde-orange.png")
+        instaicon.setAttribute("src" , "https://th.bing.com/th/id/R.30917a4b76e1c0145e5b53cc2b9cda5a?rik=Gl%2b8g2%2bSTV86Vg&riu=http%3a%2f%2fwww.jobs-blog.com%2fwp-content%2fuploads%2f2021%2f03%2fOrange-Instagram.png&ehk=Uj08D5SSmtMAquSafLA4Dosj3Hi2O6G7b6YJvr93ozg%3d&risl=&pid=ImgRaw&r=0")
+        // profile.setAttribute("src" , "ayushimg.png")
+    }
+    console.log("hii")
+}
+
 function showcontact(){
     contactform.classList.add("show")
 }

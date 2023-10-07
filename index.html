@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" id="csslink">
 </head>
 <body>
     
@@ -19,20 +19,28 @@
             </ul>
             <button id="contact-button" onclick="showcontact()">Contact</button>
         </div>
+        <!-- <img src="https://cdn-icons-png.flaticon.com/128/1812/1812660.png"> -->
+        <button id="toggle-btn" onclick="toggledarklight()"><img src="https://cdn-icons-png.flaticon.com/128/1812/1812660.png" id="toggle"></button>
     </div>  
 
     <div class="home" id="home">
         <div class="home-box1">
             <h2>Hii I am</h2>
-            <h1>AYUSH GHODKE</h1>
+            <h1>AYUSH <span>GHODKE</span></h1>
             <h4>Hey there! I'm Ayush, an aspiring front-end web developer eager to craft engaging online experiences. Let's build something amazing! 🌟💻</h4>
 
             <div class="links">
-                <div><a href="https://github.com/Ayush9535" target="_blank"><img src="https://pngimg.com/uploads/github/github_PNG40.png" alt="github"></a></div>
-                <div><a href="https://www.linkedin.com/in/ayush-ghodke-8aab941bb/" target="_blank"><img src="https://hcrnetwork.com/wp-content/uploads/2012/11/transparent-Linkedin-logo-icon.png" alt="linkedin"></a></div>
-                <div><a href="https://www.instagram.com/ayushghodke_9535/" target="_blank"><img src="https://www.pngfind.com/pngs/m/243-2436165_download-instagram-logo-png-format-click-here-to.png" alt="instagram"></a></div>
+                <div><a href="https://github.com/Ayush9535" target="_blank"><img src="https://pngimg.com/uploads/github/github_PNG40.png" alt="github" id="githubicon"></a></div>
+                <div><a href="https://www.linkedin.com/in/ayush-ghodke-8aab941bb/" target="_blank"><img src="https://hcrnetwork.com/wp-content/uploads/2012/11/transparent-Linkedin-logo-icon.png" alt="linkedin" id="linkedinicon"></a></div>
+                <div><a href="https://www.instagram.com/ayushghodke_9535/" target="_blank"><img src="https://www.pngfind.com/pngs/m/243-2436165_download-instagram-logo-png-format-click-here-to.png" alt="instagram" id="instagramicon"></a></div>
             </div>
-        </div>
+        </div> 
+        <!-- https://icones.pro/wp-content/uploads/2021/06/icone-github-orange.png -->
+        <!--  -->
+        <!-- https://icones.pro/wp-content/uploads/2021/03/icone-linkedin-ronde-orange.png -->
+        <!--  -->
+        <!-- https://th.bing.com/th/id/R.30917a4b76e1c0145e5b53cc2b9cda5a?rik=Gl%2b8g2%2bSTV86Vg&riu=http%3a%2f%2fwww.jobs-blog.com%2fwp-content%2fuploads%2f2021%2f03%2fOrange-Instagram.png&ehk=Uj08D5SSmtMAquSafLA4Dosj3Hi2O6G7b6YJvr93ozg%3d&risl=&pid=ImgRaw&r=0 -->
+        <!--  -->
 
         <div class="home-box2">
             <img src="11zon_cropped.png" id="profile" alt="">
@@ -52,30 +60,31 @@
     <div class="skills" id="skills">
         <h2>SKILLS</h2>
         <div class="card-row1">
-            <div class="skill-card">
+            <div class="skill-card red">
                 <img src="https://logospng.org/download/html-5/logo-html-5-1536.png" alt="html">
                 <h3>HTML</h3>
             </div>
-            <div class="skill-card">
+            <div class="skill-card blue">
                 <img src="https://clipground.com/images/background-image-transparency-css-clipart.jpg" alt="html">
                 <h3>CSS</h3>
             </div>
-            <div class="skill-card">
+            <div class="skill-card yellow">
                 <img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_js_official_icon_130509.png
                 " alt="html">
                 <h3>JS</h3>
             </div>
         </div>
         <div class="card-row2">
-            <div class="skill-card">
+            <div class="skill-card yellowblue">
                 <img src="https://www.pinclipart.com/picdir/middle/534-5345877_python-logo-clipart.png" alt="html">
                 <h3>Python</h3>
+                <div class="yb-div"></div>
             </div>
-            <div class="skill-card sqlcard">
+            <div class="skill-card sqlcard blue">
                 <img src="https://img2.freepng.fr/20180821/lyg/kisspng-mysql-workbench-database-mysql-cluster-5b7cdc87c3dd20.3638601015349095758023.jpg" alt="html">
                 <h3>MySql</h3>
             </div>
-            <div class="skill-card">
+            <div class="skill-card mixture">
                 <img src="fi441fc32-figma-logo-figma-tips-and-tricks-rusmir-arnautovic-creative-designer-ux-ui-removebg-preview.png" alt="figma" height="130px">
                 <h3 style="margin-top: 5px;">Figma</h3>
             </div>
@@ -87,7 +96,7 @@
             <h2>PROJECTS</h2>
         </div>
         <div class="project-show">
-            <button onclick="previous()"><img src="https://cdn1.iconfinder.com/data/icons/essential-28/24/arrow-ios-back-outline-512.png" alt=""></button>
+            <button onclick="previous()"><img src="https://cdn1.iconfinder.com/data/icons/essential-28/24/arrow-ios-back-outline-512.png"></button>
             <div class="project-showcase">
                 <img src="hangman.png" alt="hangman" id="project-img">
 
@@ -98,7 +107,7 @@
                     <a href="https://github.com/Ayush9535/Hangman-Game" target="_blank" id="code-link"><button>Code</button></a>
                 </div>
             </div>
-            <button onclick="next()"><img src="https://cdn1.iconfinder.com/data/icons/essential-28/24/arrow-ios-forward-outline-512.png" alt=""></button>
+            <button onclick="next()"><img src="https://cdn1.iconfinder.com/data/icons/essential-28/24/arrow-ios-forward-outline-512.png"></button>
         </div>
     </div>
 
