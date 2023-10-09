@@ -14,6 +14,7 @@ body{
     background-color: beige;
     /* filter: blur(5px); */
     font-family: 'Poppins', sans-serif;
+    transition: all 0.5s ease-in-out;
 }
 
 .navbar{
@@ -111,7 +112,8 @@ li a:hover::after{
 
 .links{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: start;
+    gap: 30px;
     margin-top: 40px;
 }
 
@@ -303,6 +305,8 @@ li a:hover::after{
     left: 475px;
     text-align: left;
     display: none;
+    box-shadow: 0 0 0px 501px #000000b5;
+
 }
 
 .show{
