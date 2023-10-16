@@ -115,6 +115,7 @@ function next(){
     projectname.innerHTML = array1[b]
     info.innerHTML = array5[e]
 }
+
 function previous(){
     let a = array.indexOf(projectimg.getAttribute("src")) - 1
     let c = array3.indexOf(demolink.getAttribute("href")) - 1
@@ -122,20 +123,20 @@ function previous(){
     let b = array1.indexOf(projectname.innerHTML) - 1
     let e = array5.indexOf(info.innerHTML) - 1
 
-    if (a === -1){
+    if (a == -1){
         a = 3
     }
-    if(b === -1){
+    if(b == -1){
         b = 3
     }
-    if(c === -1){
+    if(c == -1){
         c = 3
     }
-    if(d === -1){
-        d = 4
+    if(d == -1){
+        d = 3
     }
-    if(e === -1){
-        e = 4
+    if(e == -1){
+        e = 3
     }
     projectimg.setAttribute("src" , array[a])
     demolink.setAttribute("href" , array3[c])
