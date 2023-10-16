@@ -216,11 +216,11 @@ li a:hover::after{
 }
 
 .sqlcard img{
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .sqlcard h3{
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .projects{
