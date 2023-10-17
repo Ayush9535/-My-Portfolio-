@@ -81,7 +81,10 @@ function closecontact(){
 
 function contactsubmit(){
     console.log(username.value)
-    if (username.value != "" && email.value != "" && number.value != ""){
+    if (number.value.length != 10){
+        alert("Please Enter a 10 Digit Phone Number")
+    }
+    else if (username.value != "" && email.value != "" && number.value != ""){
         submitbutton.classList.add("hide")
         resulttext.innerHTML = "Thank You..!! <br>  I will contact you soon."
     }
