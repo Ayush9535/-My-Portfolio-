@@ -381,11 +381,12 @@ li a:hover::after{
     margin: 0px 150px 0px;
 }
 
-@keyframes imgani{
-    0%{transform: scale(0);}
-    50%{transform: scale(1.1);}
-    70%{transform: scale(0.9);}
-    100%{transform: scale(1);}
+@keyframes move{
+    from{
+        bottom:80px;
+    }to{
+        bottom: 90px;
+    }
 }
 
 .btns{
@@ -401,6 +402,10 @@ li a:hover::after{
 
 #goup1{
     display: none;
+}
+
+.goup:hover{
+    animation: move 0.75s infinite;
 }
 
 .goup{
