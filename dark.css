@@ -453,6 +453,7 @@ li a:hover::after{
     display: none;
 }
 
+
 .goup{
     border: none;
     position: absolute;
@@ -467,4 +468,16 @@ li a:hover::after{
 
 .goup img{
     width: 50px;
+}
+
+@keyframes move{
+    from{
+        bottom:80px;
+    }to{
+        bottom: 90px;
+    }
+}
+
+.goup:hover{
+    animation: move 0.75s infinite;
 }
