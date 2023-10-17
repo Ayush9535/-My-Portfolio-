@@ -52,16 +52,13 @@ function toggledarklight(){
         giticon.setAttribute("src" , "https://pngimg.com/uploads/github/github_PNG40.png")
         linkedinicon.setAttribute("src" , "https://www.clipartmax.com/png/middle/304-3041379_linkedin-with-circle-comments-transparent-background-website-icon.png")
         instaicon.setAttribute("src" , "https://image.similarpng.com/very-thumbnail/2020/06/Black-icon-Instagram-logo-transparent-PNG.png")
-        // profile.setAttribute("src" , "11zon_cropped.png")
     }else{
         toggleimg.setAttribute("src" , "https://cdn-icons-png.flaticon.com/128/439/439842.png");
         csslink.setAttribute("href" , "dark.css");
         giticon.setAttribute("src" , "https://icones.pro/wp-content/uploads/2021/06/icone-github-orange.png")
         linkedinicon.setAttribute("src" , "https://icones.pro/wp-content/uploads/2021/03/icone-linkedin-ronde-orange.png")
         instaicon.setAttribute("src" , "https://th.bing.com/th/id/R.30917a4b76e1c0145e5b53cc2b9cda5a?rik=Gl%2b8g2%2bSTV86Vg&riu=http%3a%2f%2fwww.jobs-blog.com%2fwp-content%2fuploads%2f2021%2f03%2fOrange-Instagram.png&ehk=Uj08D5SSmtMAquSafLA4Dosj3Hi2O6G7b6YJvr93ozg%3d&risl=&pid=ImgRaw&r=0")
-        // profile.setAttribute("src" , "ayushimg.png")
     }
-    console.log("hii")
 }
 
 function showcontact(){
@@ -80,7 +77,6 @@ function closecontact(){
 }
 
 function contactsubmit(){
-    console.log(username.value)
     if (number.value.length != 10){
         alert("Please Enter a 10 Digit Phone Number")
     }
@@ -148,22 +144,22 @@ function previous(){
     info.innerHTML = array5[e]
 }
 
+const goup1 = document.getElementById("goup1")
 const goup = document.getElementById("goup")
 
+function goesup(){
+    window.scrollTo({
+        top:0,
+        behavior: "smooth"
+    })
+}
 
 
-// window.onscroll = () => {
-//     if (window.scrollY > 50) {
-//       goup.classList.add("show")
-//     }else{
-//         goup.classList.remove("show")
-//     }
-//   }
 
-// window.addEventListener("scroll" ,()=>{
-//     if (window.scrollY > 50) {
-//         goup.classList.remove("hide")
-//       }else{
-//           goup.classList.remove("show")
-//       }
-// })
+window.addEventListener("scroll" ,()=>{
+    if (window.scrollY > 400) {
+        goup1.style.display = "block";
+    }else{
+        goup1.style.display = "none";
+    }
+})

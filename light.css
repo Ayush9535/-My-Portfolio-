@@ -399,7 +399,11 @@ li a:hover::after{
     color: inherit;
 }
 
-/* .goup{
+#goup1{
+    display: none;
+}
+
+.goup{
     border: none;
     position: absolute;
     right: 50px;
@@ -408,10 +412,11 @@ li a:hover::after{
     height: 50px;
     cursor: pointer;
     position: fixed;
+    z-index: 100000;
 }
 
 .goup img{
     width: 50px;
-} */
+}
 
 
