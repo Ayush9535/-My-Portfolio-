@@ -350,7 +350,7 @@ li a:hover::after{
     width: 100px;
     padding: 10px 0px;
     font-size: 20px;
-    margin: 10px 100px;
+    margin: 10px 50px;
     background-color: transparent;
     border: 1px solid orange;
     transition: all 0.5s ease;
@@ -436,4 +436,15 @@ li a:hover::after{
 #result-text{
     text-align: center;
     margin: 0px 150px 0px;
+}
+
+.btns{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btns a{
+    text-decoration: none;
+    color: inherit;
 }

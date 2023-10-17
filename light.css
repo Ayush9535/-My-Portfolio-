@@ -192,7 +192,8 @@ li a:hover::after{
 }
 
 .skill-card:hover{
-    box-shadow: inset 200px 0 0 0 rgb(192, 236, 90);
+    /* box-shadow: inset 200px 0 0 0 rgb(192, 236, 90); */
+    box-shadow: 5px 5px 5px 0 black;
 }
 
 .skill-card img{
@@ -296,7 +297,7 @@ li a:hover::after{
     width: 100px;
     padding: 10px 0px;
     font-size: 20px;
-    margin: 10px 100px;
+    margin: 10px 50px;
     background-color: transparent;
     border: 1px solid black;
     transition: all 0.5s ease;
@@ -385,6 +386,17 @@ li a:hover::after{
     50%{transform: scale(1.1);}
     70%{transform: scale(0.9);}
     100%{transform: scale(1);}
+}
+
+.btns{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btns a{
+    text-decoration: none;
+    color: inherit;
 }
 
 /* .goup{
