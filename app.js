@@ -154,6 +154,15 @@ function goesup(){
     })
 }
 
+function reload(){
+    window.scrollTo({
+        top:0,
+        behavior: "smooth"
+    })
+    if (window.scrollY === 0){
+        window.location.reload()
+    }
+}
 
 
 window.addEventListener("scroll" ,()=>{
