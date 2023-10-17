@@ -144,3 +144,23 @@ function previous(){
     projectname.innerHTML = array1[b]
     info.innerHTML = array5[e]
 }
+
+const goup = document.getElementById("goup")
+
+
+
+// window.onscroll = () => {
+//     if (window.scrollY > 50) {
+//       goup.classList.add("show")
+//     }else{
+//         goup.classList.remove("show")
+//     }
+//   }
+
+// window.addEventListener("scroll" ,()=>{
+//     if (window.scrollY > 50) {
+//         goup.classList.remove("hide")
+//       }else{
+//           goup.classList.remove("show")
+//       }
+// })

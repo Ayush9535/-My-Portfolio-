@@ -386,3 +386,20 @@ li a:hover::after{
     70%{transform: scale(0.9);}
     100%{transform: scale(1);}
 }
+
+/* .goup{
+    border: none;
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    position: fixed;
+}
+
+.goup img{
+    width: 50px;
+} */
+
+
