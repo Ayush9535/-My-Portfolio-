@@ -38,7 +38,7 @@ body{
     width: 50px;
 }
 
-ul{
+.navbar ul{
     display: flex;
     gap: 30px;
     list-style-type: none;
@@ -178,6 +178,7 @@ li a:hover::after{
     height: 550px;
     display: flex;
     justify-content: center;
+    margin-bottom: 100px;
 }
 
 .about-body{
@@ -208,67 +209,6 @@ li a:hover::after{
 
     margin: 80px 50px 50px;
     font-size: 18px;
-}
-
-.skills{
-    margin: 120px;
-}
-
-.skills h2{
-    display: inline;
-
-    background-color: orange;
-    color: white;
-    /* border: 2px solid black; */
-    
-    padding: 15px 35px;
-}
-
-.skill-card{
-    width: 150px;
-    height: 170px;
-    
-    border: 2px solid white;
-    /* border: 2px solid black; */
-
-    padding: 35px 20px;
-    border-radius: 10px;
-    transition: all 0.5s ease;
-}
-
-.skill-card:hover{
-    box-shadow: inset 200px 0 0 0 rgb(248, 203, 78);
-}
-
-.skill-card img{
-    width: 100px;
-}
-
-.skill-card h3{
-
-    color: white;
-
-    margin-top: 20px;
-    font-size: 25px;
-    /* z-index: 2; */
-}
-
-.card-row1 , .card-row2{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 100px;
-}
-
-.card-row2{
-    margin-top: 70px;
-}
-
-.sqlcard img{
-    margin-top: 10px;
-}
-
-.sqlcard h3{
-    margin-top: 10px;
 }
 
 .projects{
@@ -429,6 +369,7 @@ li a:hover::after{
     background-color: beige;
     border: none;
     cursor: pointer;
+    border-radius: 8px;
 }
 
 .contact-form #submit-button:hover{
@@ -484,3 +425,65 @@ li a:hover::after{
 .goup:hover{
     animation: move 0.75s infinite;
 }
+
+.main-skill-container{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    z-index: -11;
+    margin: 100px 0px;
+}
+
+.hii{
+    display: inline;
+    /* border: 2px solid black; */
+    padding: 15px 35px;
+    background-color: orange;
+    color: white;
+}
+
+.skill-card{
+    position: relative;
+    border-left: 3px solid white;
+    padding: 20px 0px 0px 20px;
+    font-size: 15px;
+    /* width: 25vw; */
+    z-index: -11;
+    color: white;
+
+}
+
+.circle{
+    width: 80px;
+    height: 80px;
+    background-color: rgb(106, 255, 0);
+    border-radius: 50%;
+    position: absolute;
+    top:0;
+    left: -40px;
+    z-index: -11;
+
+}
+
+.skills h1{
+    margin-left: 40px;
+}
+
+.skills ul{
+    padding: 20px 20px 20px 40px;
+    margin-top: 10px;
+}
+
+.main-skill-container :nth-child(4){
+    margin-right: -70px;
+}
+
+.skills ul li{
+    font-size: 25px;
+    padding-left: 10px;
+}
+.skills ul li::marker{
+    content: "✅";
+}
+
