@@ -43,6 +43,23 @@ body{
     width: 50px;
 }
 
+.resume-btn{
+    width: 200px;
+    font-size: 20px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid orange;
+    margin-top: 20px;
+    cursor: pointer;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.resume-btn:hover{
+    box-shadow: inset 200px 0 0 0 orange;
+    transform: scale(1.1);
+}
+
 .navbar ul{
     display: flex;
     gap: 30px;
@@ -117,7 +134,7 @@ li a:hover::after{
 .home-box1{
     text-align: left;
     width: 500px;
-    margin-top: 60px;
+    /* margin-top: 60px; */
 }
 
 /*  */

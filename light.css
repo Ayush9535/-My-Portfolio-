@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&family=Poppins:wght@500&display=swap');
 html{
-    scroll-behavior: smooth;;
+    scroll-behavior: smooth;
 }
 
 *{
@@ -110,7 +110,7 @@ li a:hover::after{
 .home-box1{
     text-align: left;
     width: 500px;
-    margin-top: 60px;
+    /* margin-top: 60px; */
 }
 
 .home-box1 h1{
@@ -263,6 +263,22 @@ li a:hover::after{
     background-color: transparent;
     border: 1px solid black;
     transition: all 0.5s ease;
+}
+
+.resume-btn{
+    width: 200px;
+    font-size: 20px;
+    height: 50px;
+    background-color: white;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.resume-btn:hover{
+    box-shadow: inset 200px 0 0 0 rgb(202, 237, 77);
+    transform: scale(1.1);
 }
 
 .project-showcase button:hover{
